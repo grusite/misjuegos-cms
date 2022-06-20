@@ -1,0 +1,30 @@
+{
+  "name": "cms-strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Backoffice CMS for MisJuegos",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.2.0",
+    "@strapi/plugin-users-permissions": "4.2.0",
+    "@strapi/plugin-i18n": "4.2.0",
+    "better-sqlite3": "7.4.6"
+  },
+  "author": {
+    "name": "Jorge Martín"
+  },
+  "strapi": {
+    "uuid": "0d6dcfcd-bfd0-4957-b729-00b5fe4d2296"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
