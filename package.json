@@ -5,16 +5,22 @@
   "description": "Backoffice CMS for MisJuegos",
   "scripts": {
     "develop": "strapi develop",
+    "develop:prod": "cross-env NODE_ENV=production strapi develop",
     "start": "strapi start",
+    "start:prod": "cross-env NODE_ENV=production strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "build:prod": "cross-env NODE_ENV=production strapi build",
+    "strapi": "strapi",
+    "deploy": "git push heroku master",
+    "build:deploy": "yarn build:prod & yarn heroku"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.2.0",
-    "@strapi/plugin-users-permissions": "4.2.0",
     "@strapi/plugin-i18n": "4.2.0",
-    "better-sqlite3": "7.4.6"
+    "@strapi/plugin-users-permissions": "4.2.0",
+    "@strapi/strapi": "4.2.0",
+    "better-sqlite3": "7.4.6",
+    "cross-env": "^7.0.3",
+    "pg": "^8.7.3"
   },
   "author": {
     "name": "Jorge Martín"
