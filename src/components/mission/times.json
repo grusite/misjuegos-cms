@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_mission_times",
+  "info": {
+    "displayName": "Times"
+  },
+  "options": {},
+  "attributes": {
+    "saltoTemporal": {
+      "type": "enumeration",
+      "enum": [
+        "Egipto",
+        "Cine",
+        "Manicomio"
+      ]
+    }
+  }
+}

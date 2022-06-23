@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_mission_arkhams",
+  "info": {
+    "displayName": "Arkham"
+  },
+  "options": {},
+  "attributes": {
+    "primigenios": {
+      "type": "enumeration",
+      "enum": [
+        "Rayo",
+        "Agua",
+        "Fuego"
+      ]
+    }
+  }
+}

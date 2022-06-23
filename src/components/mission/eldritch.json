@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_mission_eldritches",
+  "info": {
+    "displayName": "Eldritch"
+  },
+  "options": {},
+  "attributes": {
+    "Primigenio": {
+      "type": "enumeration",
+      "enum": [
+        "Agua",
+        "Fuego",
+        "Tierra"
+      ]
+    }
+  }
+}

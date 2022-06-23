@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_mission_zombicides",
+  "info": {
+    "displayName": "Zombicide"
+  },
+  "options": {},
+  "attributes": {
+    "mission": {
+      "type": "integer",
+      "max": 10,
+      "min": 1
+    }
+  }
+}
