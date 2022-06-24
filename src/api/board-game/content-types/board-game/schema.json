@@ -4,45 +4,46 @@
   "info": {
     "singularName": "board-game",
     "pluralName": "board-games",
-    "displayName": "Board Game",
-    "description": ""
+    "displayName": "Board Game"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "game": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::game.game"
+    "gameName": {
+      "type": "string",
+      "required": true
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "duration": {
+      "type": "decimal"
+    },
+    "expansion": {
+      "type": "string"
+    },
+    "mission": {
+      "type": "string"
+    },
+    "characters": {
+      "type": "string"
     },
     "players": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::player.player"
     },
-    "time": {
-      "type": "time",
-      "default": "00:00"
+    "extraPlayer": {
+      "type": "string",
+      "default": "NA"
+    },
+    "success": {
+      "type": "boolean"
     },
     "notes": {
       "type": "text"
-    },
-    "mission": {
-      "type": "dynamiczone",
-      "components": [
-        "mission.arkham",
-        "mission.eldritch",
-        "mission.times",
-        "mission.zombicide"
-      ],
-      "min": 1,
-      "max": 1,
-      "required": true
-    },
-    "duration": {
-      "type": "decimal"
     }
   }
 }
