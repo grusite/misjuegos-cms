@@ -4,7 +4,7 @@
   "info": {
     "singularName": "board-game",
     "pluralName": "board-games",
-    "displayName": "Board Game"
+    "displayName": "Board Games"
   },
   "options": {
     "draftAndPublish": true
